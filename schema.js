@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 async function connectionToDB(){
 
-    mongoose.connect('mongodb://127.0.0.1:27017/consultancy').then((data)=>{
+    // mongoose.connect('mongodb://127.0.0.1:27017/consultancy').then((data)=>{
+    mongoose.connect('mongodb+srv://asmamalicaj21cse:MSUaVxFedHQBIDrg@cluster0.thqsv8w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then((data)=>{
         console.log('connected to the DB')
     }).catch((err)=>{
         console.log('not connected')
